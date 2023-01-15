@@ -32,7 +32,6 @@ public class CandidateService {
 			throw new Exception("Candidate already present with enetered name...");
 		}
 		listCandidate.add(candidate);
-		System.out.println(listCandidate.toString());
 		return candidate;
 	}
 
