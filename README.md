@@ -35,6 +35,10 @@ Backend of online Candidate Election Vote Management where candidate can enter h
 ## Testing
 API testing done by postman , for all request & their desired responses , please go through the postman collection file which I attached herewith.
 
+##JUnit Testing Implemented 
+</br></br>
+ ![image](https://github.com/pavanbajait/candidate_vote/blob/main/candidate_election/img/Unit-Test.png))</br>
+
 ## Contributors
 
 👤 **Pavan Bajait**
