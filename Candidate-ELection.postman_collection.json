@@ -1,0 +1,1886 @@
+{
+	"info": {
+		"_postman_id": "ff055898-98ec-44f5-9d4d-755ef44c3d71",
+		"name": "Candidate-ELection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23533808"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/entercandidate?name=ajay",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/entercandidate?name=ajay",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"entercandidate"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ajay"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/entercandidate?name=ajay",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/entercandidate?name=ajay",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entercandidate"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "ajay"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:05:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"candidateName\": \"ajay\",\n    \"voteCount\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/entercandidate?name=pankaj",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/entercandidate?name=pankaj",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"entercandidate"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "pankaj"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/entercandidate?name=pankaj",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/entercandidate?name=pankaj",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entercandidate"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "pankaj"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:01:43 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"candidateName\": \"pankaj\",\n    \"voteCount\": 0\n}"
+				},
+				{
+					"name": "http://localhost:8080/entercandidate?name=pankaj",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/entercandidate?name=pankaj",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entercandidate"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "pankaj"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:02:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-01-15T12:02:01.916+00:00\",\n    \"status\": 500,\n    \"error\": \"Internal Server Error\",\n    \"trace\": \"java.lang.Exception: Candidate already present with enetered name...\\r\\n\\tat com.nuchange_info.service.CandidateService.createCandidate(CandidateService.java:32)\\r\\n\\tat com.nuchange_info.controller.ElectionController.saveCandidate(ElectionController.java:25)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\\r\\n\\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\r\\n\\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:696)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:779)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:833)\\r\\n\",\n    \"message\": \"Candidate already present with enetered name...\",\n    \"path\": \"/entercandidate\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/entercandidate?name=shubham",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/entercandidate?name=shubham",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"entercandidate"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "shubham"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/entercandidate?name=shubham",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/entercandidate?name=shubham",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entercandidate"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "shubham"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:02:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"candidateName\": \"shubham\",\n    \"voteCount\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/entercandidate?name=pavan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/entercandidate?name=pavan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"entercandidate"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "pavan"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/entercandidate?name=pavan",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/entercandidate?name=pavan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entercandidate"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "pavan"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:03:26 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"candidateName\": \"pavan\",\n    \"voteCount\": 0\n}"
+				},
+				{
+					"name": "http://localhost:8080/entercandidate?name=pavan",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/entercandidate?name=pavan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entercandidate"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "pavan"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:04:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-01-15T12:04:31.957+00:00\",\n    \"status\": 500,\n    \"error\": \"Internal Server Error\",\n    \"trace\": \"java.lang.Exception: Candidate already present with enetered name...\\r\\n\\tat com.nuchange_info.service.CandidateService.createCandidate(CandidateService.java:32)\\r\\n\\tat com.nuchange_info.controller.ElectionController.saveCandidate(ElectionController.java:25)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\\r\\n\\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\r\\n\\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:696)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:779)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:833)\\r\\n\",\n    \"message\": \"Candidate already present with enetered name...\",\n    \"path\": \"/entercandidate\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/entercandidate?name=ajay",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/entercandidate?name=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"entercandidate"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/entercandidate?name=ajay",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/entercandidate?name=ajay",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entercandidate"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "ajay"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:05:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"candidateName\": \"ajay\",\n    \"voteCount\": 0\n}"
+				},
+				{
+					"name": "http://localhost:8080/entercandidate?name=ajay",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/entercandidate?name=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entercandidate"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": ""
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:05:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"candidateName\": \"ajay\",\n    \"voteCount\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/entercandidate?name=ajay",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/entercandidate?name=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"entercandidate"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/entercandidate?name=ajay",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/entercandidate?name=ajay",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entercandidate"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "ajay"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:05:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"candidateName\": \"ajay\",\n    \"voteCount\": 0\n}"
+				},
+				{
+					"name": "http://localhost:8080/entercandidate?name=ajay",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/entercandidate?name=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entercandidate"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": ""
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:06:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-01-15T12:06:19.481+00:00\",\n    \"status\": 500,\n    \"error\": \"Internal Server Error\",\n    \"trace\": \"java.lang.Exception: Name can not be Null Or Empty!\\r\\n\\tat com.nuchange_info.service.CandidateService.createCandidate(CandidateService.java:26)\\r\\n\\tat com.nuchange_info.controller.ElectionController.saveCandidate(ElectionController.java:25)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\\r\\n\\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\r\\n\\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:696)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:779)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:833)\\r\\n\",\n    \"message\": \"Name can not be Null Or Empty!\",\n    \"path\": \"/entercandidate\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/castvote?name=pankaj",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/castvote?name=pankaj",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"castvote"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "pankaj"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/castvote?name=pankaj",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/castvote?name=pankaj",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"castvote"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "pankaj"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:07:23 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"candidateName\": \"pankaj\",\n    \"voteCount\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/castvote?name=pankaj",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/castvote?name=pankaj",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"castvote"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "pankaj"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/castvote?name=pankaj",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/castvote?name=pankaj",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"castvote"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "pankaj"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:08:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"candidateName\": \"pankaj\",\n    \"voteCount\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/castvote?name=pankaj",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/castvote?name=pankaj",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"castvote"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "pankaj"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/castvote?name=pankaj",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/castvote?name=pankaj",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"castvote"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "pankaj"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:09:09 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"candidateName\": \"pankaj\",\n    \"voteCount\": 3\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/castvote?name=shubham",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/castvote?name=shubham",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"castvote"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "shubham"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/castvote?name=shubham",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/castvote?name=shubham",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"castvote"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "shubham"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:09:47 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"candidateName\": \"shubham\",\n    \"voteCount\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/castvote?name=shubham",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/castvote?name=shubham",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"castvote"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "shubham"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/castvote?name=shubham",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/castvote?name=shubham",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"castvote"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "shubham"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:10:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"candidateName\": \"shubham\",\n    \"voteCount\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/castvote?name=pavan",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/castvote?name=pavan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"castvote"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "pavan"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/castvote?name=pavan",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/castvote?name=pavan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"castvote"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "pavan"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:10:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"candidateName\": \"pavan\",\n    \"voteCount\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/countvote?name=pavan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/countvote?name=pavan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"countvote"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "pavan"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/countvote?name=pavan",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/countvote?name=pavan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"countvote"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "pavan"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:12:24 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"candidateName\": \"pavan\",\n    \"voteCount\": 7\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/countvote?name=pankaj",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/countvote?name=pankaj",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"countvote"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "pankaj"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/countvote?name=pankaj",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/countvote?name=pankaj",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"countvote"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "pankaj"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:12:53 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"candidateName\": \"pankaj\",\n    \"voteCount\": 7\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/countvote?name=shubham",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/countvote?name=shubham",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"countvote"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "shubham"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/countvote?name=shubham",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/countvote?name=shubham",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"countvote"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "shubham"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:13:14 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"candidateName\": \"shubham\",\n    \"voteCount\": 5\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/listvote",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/listvote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"listvote"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "shubham",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/listvote",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/listvote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"listvote"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "shubham",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:13:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"shubham\": 5,\n    \"pavan\": 7,\n    \"ajay\": 0,\n    \"pankaj\": 7\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/getwinner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getwinner",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getwinner"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "shubham",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/getwinner",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/getwinner",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getwinner"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "shubham",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:15:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-01-15T12:15:59.147+00:00\",\n    \"status\": 500,\n    \"error\": \"Internal Server Error\",\n    \"trace\": \"java.lang.Exception: Please add candidate first...\\r\\n\\tat com.nuchange_info.service.CandidateService.getWinner(CandidateService.java:93)\\r\\n\\tat com.nuchange_info.controller.ElectionController.getWinner(ElectionController.java:49)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\\r\\n\\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\r\\n\\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:670)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:779)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:833)\\r\\n\",\n    \"message\": \"Please add candidate first...\",\n    \"path\": \"/getwinner\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/listvote",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/listvote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"listvote"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "shubham",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/listvote",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/listvote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"listvote"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "shubham",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:16:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-01-15T12:16:31.632+00:00\",\n    \"status\": 500,\n    \"error\": \"Internal Server Error\",\n    \"trace\": \"java.lang.Exception: Please add candidate first...\\r\\n\\tat com.nuchange_info.service.CandidateService.getAllNamesAndVotes(CandidateService.java:81)\\r\\n\\tat com.nuchange_info.controller.ElectionController.getAllNamesAndVotes(ElectionController.java:43)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\\r\\n\\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\r\\n\\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:670)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:779)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:833)\\r\\n\",\n    \"message\": \"Please add candidate first...\",\n    \"path\": \"/listvote\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/castvote?name=ram",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/castvote?name=ram",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"castvote"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ram"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/castvote?name=ram",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/castvote?name=ram",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"castvote"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "ram"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:18:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-01-15T12:18:28.058+00:00\",\n    \"status\": 500,\n    \"error\": \"Internal Server Error\",\n    \"trace\": \"java.lang.Exception: Candidate Not Found, Please add candidate first...\\r\\n\\tat com.nuchange_info.service.CandidateService.addVote(CandidateService.java:53)\\r\\n\\tat com.nuchange_info.controller.ElectionController.castVote(ElectionController.java:31)\\r\\n\\tat jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)\\r\\n\\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\r\\n\\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:699)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:779)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:833)\\r\\n\",\n    \"message\": \"Candidate Not Found, Please add candidate first...\",\n    \"path\": \"/castvote\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/countvote?name=ram",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/countvote?name=ram",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"countvote"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ram"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/countvote?name=ram",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/countvote?name=ram",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"countvote"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "ram"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:18:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-01-15T12:18:57.492+00:00\",\n    \"status\": 500,\n    \"error\": \"Internal Server Error\",\n    \"trace\": \"java.lang.Exception: Candidate Not Found, Please add candidate first...\\r\\n\\tat com.nuchange_info.service.CandidateService.getCountOfVote(CandidateService.java:73)\\r\\n\\tat com.nuchange_info.controller.ElectionController.getCountOfVote(ElectionController.java:37)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\\r\\n\\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\r\\n\\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:670)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:779)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:833)\\r\\n\",\n    \"message\": \"Candidate Not Found, Please add candidate first...\",\n    \"path\": \"/countvote\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/getwinner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getwinner",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getwinner"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "shubham",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/getwinner",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/getwinner",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getwinner"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "shubham",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:19:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-01-15T12:19:24.367+00:00\",\n    \"status\": 500,\n    \"error\": \"Internal Server Error\",\n    \"trace\": \"java.lang.Exception: ELection winner results tie between candidates : {pavan=7, pankaj=7}\\r\\n\\tat com.nuchange_info.service.CandidateService.getWinner(CandidateService.java:110)\\r\\n\\tat com.nuchange_info.controller.ElectionController.getWinner(ElectionController.java:49)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\\r\\n\\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\r\\n\\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:670)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:779)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:833)\\r\\n\",\n    \"message\": \"ELection winner results tie between candidates : {pavan=7, pankaj=7}\",\n    \"path\": \"/getwinner\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/getwinner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getwinner",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getwinner"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "shubham",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/getwinner",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/getwinner",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getwinner"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "shubham",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jan 2023 12:20:13 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"pavan\": 8\n}"
+				}
+			]
+		}
+	]
+}
